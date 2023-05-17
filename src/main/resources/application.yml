@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/test
+    username: sa
+    driverClassName: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddlAuto: create
+    showSql: true
+    properties:
+      hibernate:
+        format_sql: true
+      dialect: org.hibernate.dialect.H2Dialect
+
+logging:
+  level:
+    org.hibernate.SQL: debug
