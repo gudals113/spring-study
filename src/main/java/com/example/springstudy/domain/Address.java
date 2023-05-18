@@ -1,8 +1,12 @@
 package com.example.springstudy.domain;
 
+import jakarta.persistence.Embeddable;
 import jakarta.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
 
-@Entity
+@Embeddable
+@Getter @Setter
 public class Address {
     private String city;
     private String street;
